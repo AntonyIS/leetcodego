@@ -22,7 +22,7 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 func BestTimeToBuyStock(prices []int) int {
 	// Assign left,right and maxProfit pointers of the prices array
 	left, right, maxProfit := 0, 1, 0
-	// Iterate over pricess as long as right is less that len prices
+	// Iterate over pricess as long as right is less than len prices
 	for right < len(prices) {
 		// Check if right value is greater than left to get max value
 		if prices[left] < prices[right] {
