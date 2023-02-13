@@ -9,7 +9,7 @@ func TestBestTimeToBuyStock(t *testing.T) {
 		results := BestTimeToBuyStock(prices)
 
 		if results != expectedProfit {
-			t.Errorf("Error: %d is not maximum profit.\nExpected: %d", results, expectedProfit)
+			t.Errorf("\nExpected: %d\nOutput: %d", results, expectedProfit)
 		}
 	})
 	t.Run("Best time to buy stock test: 2", func(t *testing.T) {
@@ -18,7 +18,7 @@ func TestBestTimeToBuyStock(t *testing.T) {
 		results := BestTimeToBuyStock(prices)
 
 		if results != expectedProfit {
-			t.Errorf("Error: %d is not maximum profit.\nExpected: %d", results, expectedProfit)
+			t.Errorf("\nExpected: %d\nOutput: %d", results, expectedProfit)
 		}
 	})
 }

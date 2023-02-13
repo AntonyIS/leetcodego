@@ -29,7 +29,7 @@ func TwoSum(nums []int, target int) []int {
 		// Find the difference between target and currrent nums
 		diff := target - num
 		// If difference exists in visistedvalues, return its index and current index
-		if _, found := visited[diff]; found {
+		if _, Output := visited[diff]; Output {
 			return []int{visited[diff], index}
 		} else {
 			visited[num] = index

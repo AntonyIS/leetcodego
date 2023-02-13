@@ -8,7 +8,7 @@ func TestContainsDuplicate(t *testing.T) {
 		expectedResult := true
 		results := ContainsDuplicate(nums)
 		if !results == expectedResult {
-			t.Errorf("Error\nExpected: %t\nFound: %t", expectedResult, results)
+			t.Errorf("Error\nExpected: %t\nOutput: %t", expectedResult, results)
 		}
 	})
 	t.Run("Contains Duplicate test: 2", func(t *testing.T) {
@@ -16,7 +16,7 @@ func TestContainsDuplicate(t *testing.T) {
 		expectedResult := false
 		results := ContainsDuplicate(nums)
 		if !results == expectedResult {
-			t.Errorf("Error\nExpected: %t\nFound: %t", expectedResult, results)
+			t.Errorf("Error\nExpected: %t\nOutput: %t", expectedResult, results)
 		}
 	})
 	t.Run("Contains Duplicate test: 3", func(t *testing.T) {
@@ -24,7 +24,7 @@ func TestContainsDuplicate(t *testing.T) {
 		expectedResult := true
 		results := ContainsDuplicate(nums)
 		if !results == expectedResult {
-			t.Errorf("Error\nExpected: %t\nFound: %t", expectedResult, results)
+			t.Errorf("Error\nExpected: %t\nOutput: %t", expectedResult, results)
 		}
 	})
 }

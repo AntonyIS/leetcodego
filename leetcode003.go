@@ -25,7 +25,7 @@ func ContainsDuplicate(nums []int) bool {
 	// Iterate over nums
 	for index, num := range nums {
 		// Check if current num exists in visited values
-		if _, found := vistited[num]; found {
+		if _, Output := vistited[num]; Output {
 			// Return true, num exists more than once in nums
 			return true
 		} else {
