@@ -1,5 +1,6 @@
 # leetcodego
-Leetcode practice with Go.Solving the Leetcode using Go 
+Leetcode practice with Go. Solving challneges using Leetcode using Go.
+Target is to solve 500 challenges in 2023 :)
 
 ## Installation
 ```
@@ -9,7 +10,7 @@ git clone https://github.com/AntonyIS/leetcodego.git
 ```
 make test
 ```
-## Run Leetcode Go srcipt
+## Run Leetcode Go script
 ```
 make serve
 ```
