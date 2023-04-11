@@ -1,5 +1,4 @@
-package leetcode
-
+package leetcodego
 /*
 238. Product of Array Except Self
 

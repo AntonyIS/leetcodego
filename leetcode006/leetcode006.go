@@ -1,4 +1,4 @@
-package leetcode
+package leetcodego
 
 /*
 152. Maximum Product Subarray

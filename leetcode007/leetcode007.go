@@ -1,4 +1,4 @@
-package leetcode
+package leetcodego
 
 /*
 153. Find Minimum in Rotated Sorted Array

@@ -1,4 +1,4 @@
-package leetcode
+package leetcodego
 
 /*
 121. Best Time to Buy and Sell Stock
@@ -42,4 +42,3 @@ func BestTimeToBuyStock(prices []int) int {
 	}
 	return maxProfit
 }
-

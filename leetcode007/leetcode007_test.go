@@ -1,5 +1,4 @@
-package leetcode
-
+package leetcodego
 import (
 	"testing"
 )

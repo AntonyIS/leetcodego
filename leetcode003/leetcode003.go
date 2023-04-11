@@ -1,5 +1,4 @@
-package leetcode
-
+package leetcodego
 /*
 217. Contains Duplicate
 

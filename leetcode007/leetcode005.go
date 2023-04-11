@@ -1,4 +1,4 @@
-package leetcode
+package leetcodego
 
 /*
 53. Maximum Subarray

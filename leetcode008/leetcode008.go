@@ -1,4 +1,4 @@
-package leetcode
+package leetcodego
 
 /*
 Search in Rotated Sorted Array

@@ -1,4 +1,4 @@
-package leetcode
+package leetcodego
 
 /*
 1. Two Sum
