@@ -1,4 +1,4 @@
-<img src="./assets/gopher.png" alt="Gopher image">
+<img src="./assets/gopher.png" alt="Gopher image" align="center">
 
 
 # Leetcodego
