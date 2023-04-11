@@ -1,5 +1,5 @@
-<img src="./assets/gopher.png" alt="Logo of the project" align="right" height="20" width="20">
-<img src="./assets/leetCode.png" alt="Logo of the project" align="left">
+<img src="./assets/gopher.png" alt="Gopher image" align="right" height="50" width="50">
+<img src="./assets/LeetCode.png" alt="Logo of the project" align="left" eight="50" width="50">
 
 # Leetcodego
 Leetcode practice with Go. Solving challneges using Leetcode using Go.
