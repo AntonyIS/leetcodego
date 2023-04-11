@@ -1,3 +1,4 @@
+<img src="./assets/gopher.png" alt="Logo of the project" align="right">
 # leetcodego
 Leetcode practice with Go. Solving challneges using Leetcode using Go.
 Target is to solve 500 challenges in 2023 :)
