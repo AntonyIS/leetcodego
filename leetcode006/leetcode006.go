@@ -26,34 +26,25 @@ func MaxProduct(nums []int) int {
 			curMax, curMin = 1, 1
 		}
 		tmp := curMax * num
-		curMax = func(args ...int) int {
-			res := args[0]
-			for _, i := range args {
-				if i > res {
-					res = i
-				}
-			}
-			return res
-		}(curMax*num, curMin*num, num)
-
-		curMin = func(args ...int) int {
-			res := args[0]
-			for _, i := range args {
-				if i < res {
-					res = i
-				}
-			}
-			return res
-		}(tmp, curMin*num, num)
-
-		maxProduct = func(a, b int) int {
-			if a > b {
-				return a
-			}
-			return b
-
-		}(maxProduct, curMax)
+		curMax = max(curMax*num, max(curMin*num, num))
+		curMin = min(tmp, min(curMin*num, num))
+		maxProduct = max(maxProduct, curMax)
 
 	}
 	return maxProduct
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+
+	return b
 }
