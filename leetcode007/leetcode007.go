@@ -32,25 +32,36 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 */
 
 func FindMin(nums []int) int {
-	min, left, right := nums[0], 0, len(nums)-1
-
-	for left < right {
+	// Min value
+	res := nums[0]
+	// Left and right pointer
+	left, right := 0, len(nums)-1
+	// Loop through values in nums
+	for left <= right {
+		// Check if nums is sorted
 		if nums[left] < nums[right] {
-			min = func(a, b int) int {
-				if a < b {
-					return a
-				}
-				return b
-			}(min, nums[left])
+			res = min(res, nums[left])
 			break
-		}
-		mid := (left + right) / 2
-		if nums[mid] >= nums[left] {
-			left = mid + 1
 		} else {
-			right = mid - 1
+			// Get the mid point
+			mid := (left + right) / 2
+			// Check if the mid value(nums[mid]) is less than the current min(res)
+			res = min(res, nums[mid])
+			// Check res is in the left or right section of nums
+			if nums[mid] >= nums[left] {
+				left = mid + 1
+			} else {
+				right = mid - 1
+			}
 		}
-
 	}
-	return min
+	return res
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	} else {
+		return b
+	}
 }
