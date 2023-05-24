@@ -1,7 +1,6 @@
 package leetcodego
 /*
 217. Contains Duplicate
-
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 Example 1:
@@ -24,7 +23,7 @@ func ContainsDuplicate(nums []int) bool {
 	// Iterate over nums
 	for index, num := range nums {
 		// Check if current num exists in visited values
-		if _, Output := vistited[num]; Output {
+		if _, found := vistited[num]; found {
 			// Return true, num exists more than once in nums
 			return true
 		} else {

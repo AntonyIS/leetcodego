@@ -2,11 +2,8 @@ package leetcodego
 /*
 11. Container With Most Water
 You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
-
 Find two lines that together with the x-axis form a container, such that the container contains the most water.
-
 Return the maximum amount of water a container can store.
-
 Notice that you may not slant the container.
 Example 1:
 
@@ -22,8 +19,10 @@ Output: 1
 func MaxArea(nums []int) int {
 	m, l, r := 0, 0, len(nums)-1
 	for l < r {
-		a := (r - l) * min(nums[l], nums[r])
-		m = max(m, a)
+		length := r - l
+		height := min(nums[l] , nums[r])
+		area := length * height
+		m = max(m, area)
 		if nums[l] < nums[r] {
 			l += 1
 		} else {
