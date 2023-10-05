@@ -1,34 +1,34 @@
 package leetcodego
+
 /*
 217. Contains Duplicate
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 Example 1:
-
 Input: nums = [1,2,3,1]
 Output: true
-Example 2:
 
+Example 2:
 Input: nums = [1,2,3,4]
 Output: false
-Example 3:
 
+Example 3:
 Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true
 */
 
 func ContainsDuplicate(nums []int) bool {
-	// Store vistited values in a map: map does not allow dupliated keys
-	vistited := make(map[int]int)
+	// Store visited values in a map: map does not allow duplicated keys
+	visited := make(map[int]int)
 	// Iterate over nums
 	for index, num := range nums {
 		// Check if current num exists in visited values
-		if _, found := vistited[num]; found {
+		if _, found := visited[num]; found {
 			// Return true, num exists more than once in nums
 			return true
 		} else {
 			// Add num as a key in a the visited map and index as its value
-			vistited[num] = index
+			visited[num] = index
 		}
 	}
 	return false

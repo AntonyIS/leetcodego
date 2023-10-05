@@ -1,5 +1,4 @@
 package leetcodego
-
 /*
 1. Two Sum
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -28,7 +27,7 @@ func TwoSum(nums []int, target int) []int {
 	for index, num := range nums {
 		// Find the difference between target and currrent nums
 		diff := target - num
-		// If difference exists in visistedvalues, return its index and current index
+		// If difference exists in visisted values, return its index and current index
 		if _, found := visited[diff]; found {
 			return []int{visited[diff], index}
 		} else {
